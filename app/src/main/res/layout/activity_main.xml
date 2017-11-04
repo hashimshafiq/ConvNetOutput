@@ -25,6 +25,91 @@
         android:textColorHint="@android:color/white" />
 
     <EditText
+        android:id="@+id/filterText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heightText"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Filter Size"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/stridesText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/filterText"
+        android:layout_below="@+id/filterText"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Strides"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/numberOfFilterText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/filterText"
+        android:layout_alignBottom="@+id/filterText"
+        android:layout_toEndOf="@+id/widthText"
+        android:ems="10"
+        android:hint="No. Of Filters"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/paddingText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stridesText"
+        android:layout_alignBottom="@+id/stridesText"
+        android:layout_alignStart="@+id/numberOfFilterText"
+        android:ems="10"
+        android:hint="Paddings"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/widthText2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightText"
+        android:layout_alignBottom="@+id/heightText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Width"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/depthText2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/widthText"
+        android:layout_alignBottom="@+id/widthText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="Depth"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
         android:id="@+id/widthText"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
@@ -62,6 +147,17 @@
         android:layout_marginEnd="90dp"
         android:layout_marginTop="17dp"
         android:text="INPUT LAYER"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/widthText"
+        android:layout_marginTop="22dp"
+        android:layout_toStartOf="@+id/depthText"
+        android:text="CONV. LAYER"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="30sp" />
 </RelativeLayout>
