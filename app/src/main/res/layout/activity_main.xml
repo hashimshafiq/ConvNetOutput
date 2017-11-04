@@ -81,7 +81,7 @@
         android:textColorHint="@android:color/white" />
 
     <EditText
-        android:id="@+id/widthText2"
+        android:id="@+id/widthText"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/heightText"
@@ -95,7 +95,7 @@
         android:textColorHint="@android:color/white" />
 
     <EditText
-        android:id="@+id/depthText2"
+        android:id="@+id/depthText"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/widthText"
@@ -160,4 +160,23 @@
         android:text="CONV. LAYER"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/stridesText"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="51dp"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calculateBtn"
+        android:layout_alignBottom="@+id/calculateBtn"
+        android:layout_alignStart="@+id/paddingText"
+        android:text="Reset All" />
 </RelativeLayout>
