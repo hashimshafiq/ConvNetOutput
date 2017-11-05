@@ -1,5 +1,6 @@
 package convnet.hashim.com.convnetoutput;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -59,6 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int d = returnDepth(number);
             String output = " ( "+h+" , "+w+" , "+d+" ) ";
             Toast.makeText(this,output,Toast.LENGTH_LONG).show();
+
+
+        }else if(view.getId()==R.id.resetBtn){
+            resetAll();
 
         }
 
@@ -133,6 +138,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(!st.isEmpty()) {
             stride = Integer.parseInt(st);
+            if(stride==0){
+                stride = 1;
+            }
         }else{
             strideText.setText("1");
             stride = 1;
@@ -150,5 +158,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public void resetAll(){
 
+        heightText.setText("");
+        widthText.setText("");
+        depthText.setText("");
+        sizeFText.setText("");
+        noFText.setText("");
+        paddingText.setText("");
+        strideText.setText("");
+
+
+
+    }
 }

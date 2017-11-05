@@ -136,20 +136,25 @@
 
     <Button
         android:id="@+id/calculateBtn"
+        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/stridesText"
         android:layout_marginBottom="36dp"
         android:layout_marginStart="51dp"
-        android:text="Calculate" />
+        android:background="@android:color/holo_blue_bright"
+        android:text="CALCULATE"
+        android:textColorLink="@android:color/holo_blue_dark" />
 
     <Button
         android:id="@+id/resetBtn"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/calculateBtn"
         android:layout_alignBottom="@+id/calculateBtn"
         android:layout_alignStart="@+id/paddingText"
+        android:background="@android:color/holo_blue_bright"
         android:text="Reset All" />
 </RelativeLayout>
